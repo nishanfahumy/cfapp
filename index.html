@@ -1,0 +1,48 @@
+<html ng-app="cf">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cystic Fibrosis</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script type="text/javascript" src="./js/vendor/angular.min.js"></script>
+		<script type="text/javascript" src="./js/vendor/angular.animate.min.js"></script>
+		<script type="text/javascript" src="./js/vendor/angular.aria.min.js"></script>
+		<script type="text/javascript" src="./js/vendor/angular.messages.min.js"></script>
+		<script type="text/javascript" src="./js/vendor/angular.route.min.js"></script>
+		<script type="text/javascript" src="./js/vendor/angular.material.min.js"></script>
+		<script type="text/javascript" src="./js/vendor/md-data-table.min.js"></script>
+
+		<link rel="stylesheet" href="./css/vendor/md-data-table.min.css">
+		<link rel="stylesheet" href="./css/vendor/angular.material.min.css">
+		<link rel="stylesheet" href="./css/vendor/material.icons.css">
+		<link rel="stylesheet" href="./css/app.css">
+	</head>
+	<body ng-controller="CFController as c" layout="column" flex ng-cloak>
+		<md-content layout="column" class="relative-full-height" layout-fill>
+			<md-toolbar class="dark-grey-bg">
+				<div class="md-toolbar-tools">
+					<md-button class="md-icon-button" aria-label="Settings" ng-disabled="pageName == 'home'" ng-click="c.navigate('home')">
+						<md-icon class="material-icons">home</md-icon>
+					</md-button>
+					<h2>
+						<span>CF App</span>
+					</h2>
+					<span flex></span>
+					<md-button class="md-icon-button" aria-label="More">
+						<md-icon class="material-icons">more_horiz</md-icon>
+					</md-button>
+				</div>
+			</md-toolbar>
+
+			<md-content layout="column" class="relative-full-height red-bg" layout-wrap flex>
+				<ng-view role="main"></ng-view>
+			</md-content>
+		</md-content>
+		
+		<script type="text/javascript" src="./js/app.js"></script>
+		<script type="text/javascript" src="./js/config.js"></script>
+		<script type="text/javascript" src="./js/controllers.js"></script>
+		<script type="text/javascript" src="./js/services.js"></script>
+	</body>
+</html>

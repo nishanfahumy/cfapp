@@ -1,0 +1,33 @@
+<md-dialog aria-label="New Meal">
+    <form role="form" novalidate="true" name="nutritionForm">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>New Meal</h2>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <md-input-container flex>
+                    <label>Meal Name</label>
+                    <input required ng-model="ctrl.meal.name" name="mealName">
+                </md-input-container>
+                <md-input-container class="md-block" flex>
+                    <label>Time</label>
+                    <md-select required ng-model="ctrl.meal.type" name="mealType">
+                        <md-option ng-repeat="type in ['Breakfast', 'Lunch', 'Dinner']" value="{{ type }}">
+                            {{ type }}
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+            </div>
+        </md-dialog-content>
+        <md-dialog-actions layout="row">
+            <md-button ng-click="ctrl.cancel()">
+                Cancel
+            </md-button>
+            <md-button ng-click="ctrl.save()" ng-disabled="nutritionForm.$invalid">
+                Save
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

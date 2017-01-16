@@ -1,0 +1,13 @@
+<md-bottom-sheet class="md-grid" layout="column">
+    <div layout="row" layout-align="center center" ng-cloak>
+        <h5>Update Enzyme Intake of {{ ctrl.enzyme.meal }}</h5>
+    </div>
+    <div ng-cloak flex layout="column">
+        <md-input-container flex="100">
+			<label>Enzyme Intake</label>
+			<md-select name="enzymes" ng-model="ctrl.enzyme.quantity" required flex>
+				<md-option value="{{ value }}" ng-repeat="value in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]">{{ value }}</md-option>
+			</md-select>
+        </md-input-container>
+    </div>
+</md-bottom-sheet>

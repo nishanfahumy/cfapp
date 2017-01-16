@@ -1,0 +1,15 @@
+{
+	"Breakfast" : [
+		"Cheese Sandwich",
+		"Orange Juice"
+	],
+
+	"Lunch" : [
+		"Beef Steak",
+		"Tuna Steak"
+	],
+
+	"Dinner" : [
+		"Cesar Salad"
+	]
+}

@@ -1,0 +1,26 @@
+<md-content class="md-padding red-bg white">
+	<p>Ask your CF dietition to help you complete you enzyme plan.</p>
+
+	<strong>Record the type and strength of enzyme you use and the number to take per meal</strong><br><br>
+
+	<md-divider class="white-border"></md-divider>
+
+	<md-table-container>
+        <table md-table>
+            <thead md-head>
+                <tr role="button" md-row>
+                    <th md-column>Meal</th>
+                    <th md-column>Quantity</th>
+                </tr>
+            </thead>
+            <tbody md-body>
+                <tr md-row role="button"
+                    ng-click="ctrl.editEnzyme(meal)"
+                    ng-repeat="meal in ctrl.meals">
+                    <td md-cell>{{meal.meal || "-"}}</td>
+                    <td md-cell><div class="circled">{{meal.quantity || 0}}</div></td>
+                </tr>
+            </tbody>
+        </table>
+    </md-table-container>
+</md-content>

@@ -1,0 +1,26 @@
+[
+	{
+		"meal" : "Breakfast",
+		"quantity": 0
+	},
+	{
+		"meal" : "Lunch",
+		"quantity": 0
+	},
+	{
+		"meal" : "Dinner",
+		"quantity": 0
+	},
+	{
+		"meal" : "Dessert",
+		"quantity": 0
+	},
+	{
+		"meal" : "Supplement Drink",
+		"quantity": 0
+	},
+	{
+		"meal" : "Tube Feed",
+		"quantity": 0
+	}
+]

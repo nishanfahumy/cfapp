@@ -1,0 +1,1 @@
+angular.module('cf', ['ngMessages', 'ngMaterial', 'ngRoute', 'md.data.table'])

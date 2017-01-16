@@ -1,0 +1,116 @@
+.red-bg {
+	background: #af1d1d;
+}
+
+.md-datepicker-input.md-input, ._md-datepicker-floating-label label, .md-datepicker-button md-icon {
+	color: white !important;
+	border-color: white;
+}
+
+.md-datepicker-expand-triangle {
+	border-top-color: white !important;
+}
+
+md-toolbar.dark-grey-bg .md-toolbar-tools {
+	background: #272727;
+	color: white !important;
+}
+
+.circled {
+	color: black;
+	background: white;
+	border-radius: 100%;
+
+	width: 9px;
+	height: 9px;
+	line-height: 9px;
+	
+	padding: 10px;
+}
+
+.white {
+	color: white;
+}
+
+.white-border {
+	border-color: white;
+}
+
+.white th, .white td {
+	color: white !important;
+}
+
+.relative {
+	position: relative;
+}
+
+.relative-full-height {
+	position: relative;
+	height: 100%;
+}
+
+.mobile-nav md-list-item {
+	padding: 1px 25px;
+}
+
+.mobile-nav md-list-item:not(:last-child) {
+	border-bottom: 1px solid #ab7b7b;
+}
+
+.mobile-nav md-list-item.cyan .icon-halo {
+	border-color: #4283b7 !important;
+}
+
+.mobile-nav md-list-item.cyan .icon-halo md-icon {
+	color: #4283b7;
+}
+
+.mobile-nav md-list-item.red .icon-halo {
+	border-color: #da5e5e !important;
+}
+
+.mobile-nav md-list-item.red .icon-halo md-icon {
+	color: #da5e5e;
+}
+
+.mobile-nav md-list-item.green .icon-halo {
+	border-color: #30c730 !important;
+}
+
+.mobile-nav md-list-item.green .icon-halo md-icon {
+	color: #30c730;
+}
+
+.mobile-nav md-list-item.grey .icon-halo {
+	border-color: #c1c1c1 !important;
+}
+
+.mobile-nav md-list-item.grey .icon-halo md-icon {
+	color: #c1c1c1;
+}
+
+.mobile-nav md-list-item .md-headline {
+	color: white;
+}
+
+.mobile-nav md-list-item .icon-halo {
+	padding: 10px;
+	border: 1px solid red;
+	border-radius: 100%;
+	margin-right: 15px;
+}
+
+.mobile-nav md-list-item .icon-halo md-icon {
+	margin: 0;
+
+	font-size: 80px;
+	height: 80px;
+	width: 80px;
+}
+
+img.fixed-size {
+	width: 100px;
+	height: 100px;
+
+	object-fit: cover;
+}

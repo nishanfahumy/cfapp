@@ -1,0 +1,32 @@
+<md-content class="md-padding red-bg white">
+	<md-button class="md-raised" ng-click="ctrl.addMeal($event)">
+        <md-icon class="material-icons">add</md-icon>
+        Add Meal   
+    </md-button>
+
+	<md-divider class="white-border"></md-divider>
+
+	<md-table-container>
+        <table md-table>
+            <thead md-head>
+                <tr role="button" md-row>
+                    <th md-column>Type</th>
+                    <th md-column>Meals</th>
+                </tr>
+            </thead>
+            <tbody md-body>
+                <tr md-row role="button"
+                    ng-click="null"
+                    ng-repeat="(meal, items) in ctrl.meals">
+                    <td md-cell>{{meal || "-"}}</td>
+                    <td md-cell>
+                        <span ng-repeat="food in items">
+                            {{food}}
+                            <span ng-if="!$last">,</span>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </md-table-container>
+</md-content>

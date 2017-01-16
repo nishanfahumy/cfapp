@@ -1,0 +1,49 @@
+<!-- THIS NAVAGATION WILL BE DISPLAYED WHEN THE SCREEN SIZE MATCHES THAT OF A LAPTOP OR ABOVE -->
+<md-list flex ng-if="$mdMedia('gt-xs')" layout="column" layout-wrap layout-align="center center">
+	<div layout="row" layout-wrap layout-fill>
+		<md-list-item flex="25" ng-click="c.navigate('news')">
+			<md-icon class="material-icons">person</md-icon>
+			News
+		</md-list-item>
+		<md-list-item flex="25">
+			<md-icon class="material-icons">person</md-icon>
+			Treatment
+		</md-list-item>
+		<md-list-item flex="25">
+			<md-icon class="material-icons">person</md-icon>
+			Medication
+		</md-list-item>
+		<md-list-item flex="25">
+			<md-icon class="material-icons">person</md-icon>
+			Nutrition
+		</md-list-item>
+	</div>
+</md-list>
+
+<!-- THIS NAVAGATION WILL BE DISPLAYED WHEN THE SCREEN SIZE MATCHES THAT OF A PHONE OR TABLET -->
+<div ng-if="!$mdMedia('gt-xs')" layout="column" class="mobile-nav">
+	<md-list-item flex="25" layout layout-align="start center" class="cyan" ng-click="c.navigate('news')">
+		<div class="icon-halo">
+			<md-icon class="material-icons">description</md-icon>
+		</div>
+		<span class="md-headline">News</span>
+	</md-list-item>
+	<md-list-item flex="25" layout layout-align="start center" class="red" ng-click="c.navigate('treatment')">
+		<div class="icon-halo">
+			<md-icon class="material-icons">favorite</md-icon>
+		</div>
+		<span class="md-headline">Treatment</span>
+	</md-list-item>
+	<md-list-item flex="25" layout layout-align="start center" class="green" ng-click="c.navigate('medication')">
+		<div class="icon-halo">
+			<md-icon class="material-icons">note_add</md-icon>
+		</div>
+		<span class="md-headline">Medication</span>
+	</md-list-item>
+	<md-list-item flex="25" layout layout-align="start center" class="grey" ng-click="c.navigate('nutrition')">
+		<div class="icon-halo">
+			<md-icon class="material-icons">restaurant_menu</md-icon>
+		</div>
+		<span class="md-headline">Nutrition</span>
+	</md-list-item>
+</div>
